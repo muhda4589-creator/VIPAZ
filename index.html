@@ -1,43 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>VIP Reseller | AZ Empire Shop</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="vip-style.css">
+<meta charset="UTF-8">
+<title>VIP Reseller | AZ Empire Shop</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+/* ===== RESET ===== */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* ===== BACKGROUND ===== */
+body{
+  background: radial-gradient(circle at top, #140000, #000);
+  color:#ffb3b3;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+/* ===== VIP CARD ===== */
+.vip-wrapper{
+  width:100%;
+  max-width:420px;
+  padding:20px;
+}
+
+.vip-card{
+  background: rgba(0,0,0,0.85);
+  border-radius:22px;
+  padding:45px 30px;
+  text-align:center;
+  border:1px solid rgba(255,0,0,0.4);
+  box-shadow:0 0 60px rgba(255,0,0,0.5);
+  position:relative;
+}
+
+/* VIP BADGE */
+.vip-badge{
+  position:absolute;
+  top:-18px;
+  left:50%;
+  transform:translateX(-50%);
+  background:linear-gradient(135deg,#ff0000,#b30000);
+  color:#fff;
+  padding:8px 24px;
+  border-radius:30px;
+  font-weight:bold;
+  letter-spacing:2px;
+  box-shadow:0 0 25px rgba(255,0,0,0.8);
+}
+
+/* TITLES */
+.vip-card h1{
+  margin-top:25px;
+  font-size:28px;
+  color:#ff4d4d;
+  text-shadow:0 0 15px rgba(255,0,0,0.6);
+}
+
+.vip-card h2{
+  font-size:14px;
+  letter-spacing:2px;
+  margin-bottom:20px;
+  color:#ff9999;
+}
+
+/* LINE */
+.vip-line{
+  width:80px;
+  height:3px;
+  background:#ff4d4d;
+  margin:20px auto;
+  box-shadow:0 0 15px rgba(255,0,0,0.8);
+}
+
+/* TEXT */
+.vip-desc{
+  font-size:15px;
+  line-height:1.7;
+  margin-bottom:30px;
+}
+
+/* BENEFITS */
+.vip-list{
+  list-style:none;
+  margin-bottom:35px;
+}
+
+.vip-list li{
+  padding:10px 0;
+  border-bottom:1px solid rgba(255,255,255,0.08);
+}
+
+/* BUTTON */
+.vip-btn{
+  display:block;
+  width:100%;
+  padding:16px;
+  border-radius:40px;
+  background:linear-gradient(135deg,#ff0000,#ff4d4d);
+  color:#fff;
+  text-decoration:none;
+  font-weight:bold;
+  font-size:16px;
+  box-shadow:0 0 35px rgba(255,0,0,0.9);
+  transition:0.3s;
+}
+
+.vip-btn:hover{
+  transform:scale(1.05);
+}
+
+/* FOOTER */
+.vip-footer{
+  margin-top:25px;
+  font-size:12px;
+  color:#ff9999;
+}
+
+/* FLOATING WHATSAPP */
+.floating-whatsapp{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  width:60px;
+  height:60px;
+  background:#25d366;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:30px;
+  color:#fff;
+  text-decoration:none;
+  box-shadow:0 0 30px rgba(37,211,102,0.9);
+}
+</style>
 </head>
+
 <body>
 
 <div class="vip-wrapper">
-
   <div class="vip-card">
-    <img src="logo.png" class="vip-logo" alt="AZ Empire Shop">
 
-    <h1>👑 VIP Reseller</h1>
-    <p class="subtitle">Authorized Resellers Only</p>
+    <div class="vip-badge">VIP</div>
 
-    <form>
-      <div class="input-group">
-        <input type="text" placeholder="Username" required>
-      </div>
+    <h1>VIP RESELLER</h1>
+    <h2>AZ EMPIRE SHOP</h2>
 
-      <div class="input-group">
-        <input type="password" placeholder="Password" required>
-      </div>
+    <div class="vip-line"></div>
 
-      <button type="submit" class="btn-login">LOGIN</button>
-    </form>
+    <p class="vip-desc">
+      Become an official <strong>VIP Reseller</strong> and enjoy
+      premium access, special pricing, and priority support.
+    </p>
 
-    <p class="note">Not a reseller yet?</p>
+    <ul class="vip-list">
+      <li>💎 Exclusive VIP pricing</li>
+      <li>⚡ Fast activation</li>
+      <li>🛠 Priority technical support</li>
+      <li>📈 Grow your reseller business</li>
+    </ul>
 
-    <a href="https://wa.me/60129876368?text=Hi%20I%20want%20to%20be%20a%20VIP%20Reseller"
-       class="btn-whatsapp"
+    <a class="vip-btn"
+       href="https://wa.me/60129876368?text=Hi%20I%20want%20to%20be%20a%20VIP%20Reseller"
        target="_blank">
-      💬 Apply VIP Reseller (WhatsApp)
+      💬 APPLY VIA WHATSAPP
     </a>
-  </div>
 
+    <div class="vip-footer">
+      WhatsApp: 012-987-6368<br>
+      AZ Empire Shop © 2026
+    </div>
+
+  </div>
 </div>
+
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/60129876368"
+   class="floating-whatsapp"
+   title="WhatsApp Help">
+  💬
+</a>
 
 </body>
 </html>
